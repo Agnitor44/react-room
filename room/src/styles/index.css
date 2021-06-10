@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Spartan', sans-serif;
+}
+
+div.app {
+  overflow: hidden;
+}
+
+div.app section.topZone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+div.app section.topZone nav {
+  width: 500px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 200;
+}
+
+div.app section.topZone nav img.hamb {
+  display: none;
+}
+
+div.app section.topZone nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+  list-style: none;
+}
+
+div.app section.topZone nav ul li {
+  margin: 0 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.app section.topZone nav ul li:after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -7px;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+div.app section.topZone nav ul li:hover:after {
+  opacity: 1;
+}
+
+div.app section.topZone nav ul li a {
+  text-transform: lowercase;
+  color: white;
+  text-decoration: none;
+}
+
+div.app section.topZone div.slideElement {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.app section.topZone div.slideElement div.slideButtons {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  right: -180px;
+}
+
+div.app section.topZone div.slideElement div.slideButtons button {
+  width: 90px;
+  height: 90px;
+  background-color: black;
+  margin: 0;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+div.app section.topZone div.slideElement div.slideButtons button:hover {
+  opacity: 0.7;
+}
+
+div.app section.topZone div.slideElement div.slideButtons button img {
+  height: 40px;
+}
+
+div.app section.topZone div.headerZone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 90px;
+}
+
+div.app section.topZone div.headerZone div.headWraper {
+  width: 72%;
+  margin: 0 auto;
+}
+
+div.app section.topZone div.headerZone div.headWraper h1 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+div.app section.topZone div.headerZone div.headWraper article {
+  margin: 30px 0;
+  line-height: 20px;
+}
+
+div.app section.topZone div.headerZone div.headWraper img {
+  margin-left: 20px;
+}
+
+div.app section.topZone div.headerZone div.headWraper a {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+div.app section.botZone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.app section.botZone div.aboutZone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.app section.botZone div.aboutZone div.aboutWrap {
+  width: 88%;
+  margin: 0 auto;
+}
+
+div.app section.botZone div.aboutZone div.aboutWrap h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+div.app section.botZone div.aboutZone div.aboutWrap article {
+  line-height: 20px;
+  padding-top: 15px;
+}
+
+@media (max-width: 1280px) {
+  div.app section.topZone div.slideElement img {
+    width: 600px;
+  }
+  div.app section.topZone div.slideElement div.slideButtons {
+    width: 100px;
+    right: -100px;
+  }
+  div.app section.topZone div.slideElement div.slideButtons button {
+    width: 50px;
+    height: 50px;
+  }
+  div.app section.topZone div.slideElement div.slideButtons button img {
+    width: 10px;
+    height: 10px;
+  }
+  div.app section.topZone div.headerZone {
+    margin-bottom: 50px;
+  }
+  div.app section.topZone div.headerZone div.headWraper h1 {
+    font-size: 28px;
+  }
+  div.app section.topZone div.headerZone div.headWraper article {
+    margin: 20px 0;
+  }
+  div.app section.botZone img {
+    width: 30%;
+  }
+  div.app section.botZone div.aboutZone div.aboutWrap article {
+    padding: 10px 0;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 970px) {
+  div.app section.topZone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.app section.topZone div.slideElement img {
+    width: 100%;
+  }
+  div.app section.topZone div.slideElement div.slideButtons {
+    width: 100px;
+    right: 0;
+  }
+  div.app section.topZone div.slideElement div.slideButtons button {
+    width: 50px;
+    height: 50px;
+  }
+  div.app section.topZone div.slideElement div.slideButtons button img {
+    width: 10px;
+    height: 10px;
+  }
+  div.app section.topZone div.headerZone {
+    margin-bottom: 50px;
+    padding: 60px 0;
+  }
+  div.app section.topZone div.headerZone div.headWraper h1 {
+    font-size: 36px;
+  }
+  div.app section.topZone div.headerZone div.headWraper article {
+    margin: 40px 0;
+  }
+  div.app section.botZone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.app section.botZone img {
+    width: 100%;
+  }
+  div.app section.botZone div.aboutZone {
+    padding: 40px 0;
+  }
+  div.app section.botZone div.aboutZone div.aboutWrap h2 {
+    font-size: 18px;
+  }
+  div.app section.botZone div.aboutZone div.aboutWrap article {
+    padding: 10px 0;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 440px) {
+  div.app div.openDark {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 500;
+  }
+  div.app section.topZone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.app section.topZone nav {
+    height: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    z-index: 600;
+  }
+  div.app section.topZone nav img.hamb {
+    display: block;
+    position: absolute;
+    left: 30px;
+    z-index: 9999;
+  }
+  div.app section.topZone nav img {
+    margin: 0;
+  }
+  div.app section.topZone nav ul {
+    z-index: 850;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    top: -100%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  div.app section.topZone nav ul li {
+    margin: 0 15px;
+  }
+  div.app section.topZone nav ul li a {
+    font-weight: bold;
+    color: black;
+  }
+  div.app section.topZone div.slideElement img {
+    width: 600px;
+  }
+  div.app section.topZone div.slideElement div.slideButtons {
+    width: 100px;
+    right: 0;
+  }
+  div.app section.topZone div.slideElement div.slideButtons button {
+    width: 50px;
+    height: 50px;
+  }
+  div.app section.topZone div.slideElement div.slideButtons button img {
+    width: 10px;
+    height: 10px;
+  }
+  div.app section.topZone div.headerZone {
+    margin-bottom: 0;
+    padding: 60px 0;
+  }
+  div.app section.topZone div.headerZone div.headWraper {
+    width: 80%;
+  }
+  div.app section.topZone div.headerZone div.headWraper h1 {
+    font-size: 23px;
+  }
+  div.app section.topZone div.headerZone div.headWraper article {
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 50px;
+  }
+  div.app section.botZone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.app section.botZone img {
+    width: 100%;
+  }
+  div.app section.botZone div.aboutZone {
+    padding: 50px 0;
+  }
+  div.app section.botZone div.aboutZone div.aboutWrap {
+    width: 80%;
+  }
+  div.app section.botZone div.aboutZone div.aboutWrap article {
+    padding: 10px 0;
+    line-height: 17px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
